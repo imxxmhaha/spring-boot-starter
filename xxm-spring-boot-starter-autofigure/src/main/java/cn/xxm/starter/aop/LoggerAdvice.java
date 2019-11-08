@@ -62,10 +62,6 @@ public class LoggerAdvice {
                 param.append(parameterNames[i]).append("=").append(ToStringBuilder.reflectionToString(parames[i], ToStringStyle.SHORT_PREFIX_STYLE)).append(" ");
             }
         }
-
-//		for (Object obj : parames) {
-//			param.append(ToStringBuilder.reflectionToString(obj,ToStringStyle.DEFAULT_STYLE)).append("  ");
-//		}
         return param.toString();
     }
 
